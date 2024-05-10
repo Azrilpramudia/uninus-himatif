@@ -10,6 +10,11 @@
     "preview": "vite preview",
     "pretty": "prettier --write ."
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "bun lint"
+    }
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

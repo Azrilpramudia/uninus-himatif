@@ -1,4 +1,4 @@
-name: Testing
+name: Analyzing Code
 
 on:
   pull_request:

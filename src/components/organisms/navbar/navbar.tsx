@@ -26,7 +26,7 @@ export const Navbar: FC = (): ReactElement => {
           </ul>
         </nav>
       </section>
-      {navMenu ? (
+      {navMenu && (
         <div className="h-32 py-2 w-full bg-gray-400 mt-20 absolute">
           <ul className="flex flex-col gap-y-3 items-center justify-center text-white text-xl">
             <Link to={"/"}>Home</Link>
@@ -34,8 +34,6 @@ export const Navbar: FC = (): ReactElement => {
             <Link to={"/"}>Articles</Link>
           </ul>
         </div>
-      ) : (
-        <></>
       )}
     </header>
   );

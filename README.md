@@ -1,4 +1,4 @@
-# Uninus PKM
+# Uninus Himatif
 
 ## Didalam Repo ini menggunakan tech stack sebagai berikut:
 

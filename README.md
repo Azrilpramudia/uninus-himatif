@@ -44,6 +44,42 @@
 
   > `git commit -m "feat: fitur apa yang di buat`
 
+## Cara Mengatasi Konflik
+
+- 1 Stash dulu kerjaan kamu supaya gak ilang
+
+> `git stash`
+
+- 2 Setelah itu kamu perlu pull perubahan dari branch `develop`
+
+> `git pull origin develop`
+
+- 3 Setelah kamu berhasil melakukan pembaruan dari branch `develop` selanjutnya kamu perlu mengembalikan pekerjaan mu sebelum nya yang ter-_stash_
+
+> `git stash pop`
+
+- 4 Lanjutkan Pekerjaan dengan Semestinya
+
+- 5 Tapi jika ketika melakukan langkah-langkah di atas masih terjadi error konflik atau karena kecerobohan kamu, maka ikuti langkah yang bawah
+
+## Cara Mengatasi Konflik Versi 2
+
+- 1 Pindah dulu ke Branch `develop`
+
+> `git checkout develop`
+
+- 2 Kemudian pull perubahan terbaru dari branch `develop`
+
+> `git pull`
+
+- 3 Kemudian Pindah lagi ke branch yang sedang kamu kerjakan
+
+> `git checkout <branch mu>`
+
+- 4 Selanjutnya kita perlu merge perubahan terbaru dari `develop`
+
+> `git merge origin develop`
+
 ## Rekomendasi Kode Editor
 
 Visual Studio Code

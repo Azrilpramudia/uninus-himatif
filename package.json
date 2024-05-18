@@ -9,7 +9,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "pretty": "prettier --check .",
-    "testing": "vitest"
+    "testing": "vitest",
+    "story:dev": "storybook dev -p 6006"
   },
   "dependencies": {
     "@iconify/react": "^4.1.1",

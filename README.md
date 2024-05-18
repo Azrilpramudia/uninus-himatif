@@ -113,9 +113,3 @@ Visual Studio Code
 - Untuk menjalankan Projek dengan mode **Development** ketik perintah berikut
 
   > `bun dev`
-
-
-
-## Setup Env
-
-Masuk kedalam folder `apps/nama-apps/` Copy terlebih dahulu `.env.example` kemudian rename ke `.env`

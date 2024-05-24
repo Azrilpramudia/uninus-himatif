@@ -1,7 +1,7 @@
 import { Navbar } from "@/components";
-import { Hero } from "./modules";
 import { FC, ReactElement } from "react";
-import { About } from "./modules/about";
+import { Hero } from "@/routes/home/modules/hero";
+import { About } from "@/routes/home/modules/about";
 
 export const LandingPage: FC = (): ReactElement => {
   return (

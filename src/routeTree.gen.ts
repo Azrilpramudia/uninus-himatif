@@ -125,3 +125,42 @@ export const routeTree = rootRoute.addChildren({
 })
 
 /* prettier-ignore-end */
+
+/* ROUTE_MANIFEST_START
+{
+  "routes": {
+    "__root__": {
+      "children": [
+        "/",
+        "/template",
+        "/home/default",
+        "/home/",
+        "/home/modules/about",
+        "/home/modules/hero",
+        "/home/modules/"
+      ]
+    },
+    "/": {
+      "filePath": "route.tsx"
+    },
+    "/template": {
+      "filePath": "template.tsx"
+    },
+    "/home/default": {
+      "filePath": "home/default.tsx"
+    },
+    "/home/": {
+      "filePath": "home/index.ts"
+    },
+    "/home/modules/about": {
+      "filePath": "home/modules/about.tsx"
+    },
+    "/home/modules/hero": {
+      "filePath": "home/modules/hero.tsx"
+    },
+    "/home/modules/": {
+      "filePath": "home/modules/index.ts"
+    }
+  }
+}
+ROUTE_MANIFEST_END */

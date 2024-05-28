@@ -20,6 +20,7 @@
     "@tanstack/react-table": "^8.17.3",
     "axios": "^1.6.8",
     "clsx": "^2.1.1",
+    "eslint-plugin-storybook": "^0.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^2.3.0"

@@ -5,7 +5,9 @@ import { createRoute } from "@tanstack/react-router";
 import { rootRoute } from "../template";
 import { About } from "./modules/about";
 import { SellingPoint } from "./modules/sellingpoint";
+import { UsageFlow } from "./modules/usageflow";
 
+// eslint-disable-next-line react-refresh/only-export-components
 const LandingPage: FC = (): ReactElement => {
   return (
     <Fragment>
@@ -13,6 +15,7 @@ const LandingPage: FC = (): ReactElement => {
       <Hero />
       <About />
       <SellingPoint />
+      <UsageFlow />
     </Fragment>
   );
 };

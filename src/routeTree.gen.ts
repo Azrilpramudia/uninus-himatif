@@ -16,6 +16,7 @@ import { Route as RouteImport } from './routes/route'
 import { Route as HomeIndexImport } from './routes/home/index'
 import { Route as HomeDefaultImport } from './routes/home/default'
 import { Route as HomeModulesIndexImport } from './routes/home/modules/index'
+import { Route as HomeModulesUsageflowImport } from './routes/home/modules/usageflow'
 import { Route as HomeModulesSellingpointImport } from './routes/home/modules/sellingpoint'
 import { Route as HomeModulesHeroImport } from './routes/home/modules/hero'
 import { Route as HomeModulesAboutImport } from './routes/home/modules/about'
@@ -44,6 +45,11 @@ const HomeDefaultRoute = HomeDefaultImport.update({
 
 const HomeModulesIndexRoute = HomeModulesIndexImport.update({
   path: '/home/modules/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const HomeModulesUsageflowRoute = HomeModulesUsageflowImport.update({
+  path: '/home/modules/usageflow',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -115,6 +121,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof HomeModulesSellingpointImport
       parentRoute: typeof rootRoute
     }
+    '/home/modules/usageflow': {
+      id: '/home/modules/usageflow'
+      path: '/home/modules/usageflow'
+      fullPath: '/home/modules/usageflow'
+      preLoaderRoute: typeof HomeModulesUsageflowImport
+      parentRoute: typeof rootRoute
+    }
     '/home/modules/': {
       id: '/home/modules/'
       path: '/home/modules'
@@ -135,6 +148,7 @@ export const routeTree = rootRoute.addChildren({
   HomeModulesAboutRoute,
   HomeModulesHeroRoute,
   HomeModulesSellingpointRoute,
+  HomeModulesUsageflowRoute,
   HomeModulesIndexRoute,
 })
 
@@ -152,6 +166,7 @@ export const routeTree = rootRoute.addChildren({
         "/home/modules/about",
         "/home/modules/hero",
         "/home/modules/sellingpoint",
+        "/home/modules/usageflow",
         "/home/modules/"
       ]
     },
@@ -175,6 +190,9 @@ export const routeTree = rootRoute.addChildren({
     },
     "/home/modules/sellingpoint": {
       "filePath": "home/modules/sellingpoint.tsx"
+    },
+    "/home/modules/usageflow": {
+      "filePath": "home/modules/usageflow.tsx"
     },
     "/home/modules/": {
       "filePath": "home/modules/index.ts"

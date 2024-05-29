@@ -11,7 +11,7 @@ import { ChangeEventHandler } from "react";
 import { Icon } from "@iconify/react";
 import { Pagination } from "@/components/atoms/pagination";
 
-export type TDataTable<T extends Record<string, unknown>> = {
+export interface TDataTable<T extends Record<string, unknown>> {
   data: T[];
   meta?: {
     total: number;
@@ -23,7 +23,7 @@ export type TDataTable<T extends Record<string, unknown>> = {
   columns: ColumnDef<T>[];
   handleSearch?: ChangeEventHandler<HTMLInputElement>;
   setPagination?: (updater: Updater<PaginationState>) => void;
-};
+}
 
 export const DataTable = <T extends Record<string, unknown>>(
   props: TDataTable<T>,
@@ -41,6 +41,7 @@ export const DataTable = <T extends Record<string, unknown>>(
       sorting,
     },
     onSortingChange: setSorting,
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
     onPaginationChange: () => {},
     manualSorting: false,
     manualPagination: true,

@@ -4,6 +4,7 @@ import { FC, Fragment, ReactElement } from "react";
 import { createRoute } from "@tanstack/react-router";
 import { rootRoute } from "../template";
 import { About } from "./modules/about";
+import { SellingPoint } from "./modules/sellingpoint";
 
 const LandingPage: FC = (): ReactElement => {
   return (
@@ -11,6 +12,7 @@ const LandingPage: FC = (): ReactElement => {
       <Navbar />
       <Hero />
       <About />
+      <SellingPoint />
     </Fragment>
   );
 };

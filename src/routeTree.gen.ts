@@ -16,6 +16,7 @@ import { Route as RouteImport } from './routes/route'
 import { Route as HomeIndexImport } from './routes/home/index'
 import { Route as HomeDefaultImport } from './routes/home/default'
 import { Route as HomeModulesIndexImport } from './routes/home/modules/index'
+import { Route as HomeModulesSellingpointImport } from './routes/home/modules/sellingpoint'
 import { Route as HomeModulesHeroImport } from './routes/home/modules/hero'
 import { Route as HomeModulesAboutImport } from './routes/home/modules/about'
 
@@ -43,6 +44,11 @@ const HomeDefaultRoute = HomeDefaultImport.update({
 
 const HomeModulesIndexRoute = HomeModulesIndexImport.update({
   path: '/home/modules/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const HomeModulesSellingpointRoute = HomeModulesSellingpointImport.update({
+  path: '/home/modules/sellingpoint',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -102,6 +108,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof HomeModulesHeroImport
       parentRoute: typeof rootRoute
     }
+    '/home/modules/sellingpoint': {
+      id: '/home/modules/sellingpoint'
+      path: '/home/modules/sellingpoint'
+      fullPath: '/home/modules/sellingpoint'
+      preLoaderRoute: typeof HomeModulesSellingpointImport
+      parentRoute: typeof rootRoute
+    }
     '/home/modules/': {
       id: '/home/modules/'
       path: '/home/modules'
@@ -121,6 +134,7 @@ export const routeTree = rootRoute.addChildren({
   HomeIndexRoute,
   HomeModulesAboutRoute,
   HomeModulesHeroRoute,
+  HomeModulesSellingpointRoute,
   HomeModulesIndexRoute,
 })
 
@@ -137,6 +151,7 @@ export const routeTree = rootRoute.addChildren({
         "/home/",
         "/home/modules/about",
         "/home/modules/hero",
+        "/home/modules/sellingpoint",
         "/home/modules/"
       ]
     },
@@ -157,6 +172,9 @@ export const routeTree = rootRoute.addChildren({
     },
     "/home/modules/hero": {
       "filePath": "home/modules/hero.tsx"
+    },
+    "/home/modules/sellingpoint": {
+      "filePath": "home/modules/sellingpoint.tsx"
     },
     "/home/modules/": {
       "filePath": "home/modules/index.ts"

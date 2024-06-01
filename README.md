@@ -7,7 +7,6 @@
 - TypeScript
 - TailwindCSS
 
-
 # Cara Menggunakan GIT dengan Baik dan Benar
 
 ### Jika Kamu baru di Project ini maka kamu bisa ke Section Installasi

@@ -10,131 +10,131 @@
 
 // Import Routes
 
-import { Route as rootRoute } from "./routes/__root";
-import { Route as TemplateImport } from "./routes/template";
-import { Route as RouteImport } from "./routes/route";
-import { Route as HomeIndexImport } from "./routes/home/index";
-import { Route as HomeDefaultImport } from "./routes/home/default";
-import { Route as HomeModulesIndexImport } from "./routes/home/modules/index";
-import { Route as HomeModulesUsageflowImport } from "./routes/home/modules/usageflow";
-import { Route as HomeModulesSellingpointImport } from "./routes/home/modules/sellingpoint";
-import { Route as HomeModulesHeroImport } from "./routes/home/modules/hero";
-import { Route as HomeModulesAboutImport } from "./routes/home/modules/about";
+import { Route as rootRoute } from './routes/__root'
+import { Route as TemplateImport } from './routes/template'
+import { Route as RouteImport } from './routes/route'
+import { Route as HomeIndexImport } from './routes/home/index'
+import { Route as HomeDefaultImport } from './routes/home/default'
+import { Route as HomeModulesIndexImport } from './routes/home/modules/index'
+import { Route as HomeModulesUsageflowImport } from './routes/home/modules/usageflow'
+import { Route as HomeModulesSellingpointImport } from './routes/home/modules/sellingpoint'
+import { Route as HomeModulesHeroImport } from './routes/home/modules/hero'
+import { Route as HomeModulesAboutImport } from './routes/home/modules/about'
 
 // Create/Update Routes
 
 const TemplateRoute = TemplateImport.update({
-  path: "/template",
+  path: '/template',
   getParentRoute: () => rootRoute,
-} as any);
+} as any)
 
 const RouteRoute = RouteImport.update({
-  path: "/",
+  path: '/',
   getParentRoute: () => rootRoute,
-} as any);
+} as any)
 
 const HomeIndexRoute = HomeIndexImport.update({
-  path: "/home/",
+  path: '/home/',
   getParentRoute: () => rootRoute,
-} as any);
+} as any)
 
 const HomeDefaultRoute = HomeDefaultImport.update({
-  path: "/home/default",
+  path: '/home/default',
   getParentRoute: () => rootRoute,
-} as any);
+} as any)
 
 const HomeModulesIndexRoute = HomeModulesIndexImport.update({
-  path: "/home/modules/",
+  path: '/home/modules/',
   getParentRoute: () => rootRoute,
-} as any);
+} as any)
 
 const HomeModulesUsageflowRoute = HomeModulesUsageflowImport.update({
-  path: "/home/modules/usageflow",
+  path: '/home/modules/usageflow',
   getParentRoute: () => rootRoute,
-} as any);
+} as any)
 
 const HomeModulesSellingpointRoute = HomeModulesSellingpointImport.update({
-  path: "/home/modules/sellingpoint",
+  path: '/home/modules/sellingpoint',
   getParentRoute: () => rootRoute,
-} as any);
+} as any)
 
 const HomeModulesHeroRoute = HomeModulesHeroImport.update({
-  path: "/home/modules/hero",
+  path: '/home/modules/hero',
   getParentRoute: () => rootRoute,
-} as any);
+} as any)
 
 const HomeModulesAboutRoute = HomeModulesAboutImport.update({
-  path: "/home/modules/about",
+  path: '/home/modules/about',
   getParentRoute: () => rootRoute,
-} as any);
+} as any)
 
 // Populate the FileRoutesByPath interface
 
-declare module "@tanstack/react-router" {
+declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    "/": {
-      id: "/";
-      path: "/";
-      fullPath: "/";
-      preLoaderRoute: typeof RouteImport;
-      parentRoute: typeof rootRoute;
-    };
-    "/template": {
-      id: "/template";
-      path: "/template";
-      fullPath: "/template";
-      preLoaderRoute: typeof TemplateImport;
-      parentRoute: typeof rootRoute;
-    };
-    "/home/default": {
-      id: "/home/default";
-      path: "/home/default";
-      fullPath: "/home/default";
-      preLoaderRoute: typeof HomeDefaultImport;
-      parentRoute: typeof rootRoute;
-    };
-    "/home/": {
-      id: "/home/";
-      path: "/home";
-      fullPath: "/home";
-      preLoaderRoute: typeof HomeIndexImport;
-      parentRoute: typeof rootRoute;
-    };
-    "/home/modules/about": {
-      id: "/home/modules/about";
-      path: "/home/modules/about";
-      fullPath: "/home/modules/about";
-      preLoaderRoute: typeof HomeModulesAboutImport;
-      parentRoute: typeof rootRoute;
-    };
-    "/home/modules/hero": {
-      id: "/home/modules/hero";
-      path: "/home/modules/hero";
-      fullPath: "/home/modules/hero";
-      preLoaderRoute: typeof HomeModulesHeroImport;
-      parentRoute: typeof rootRoute;
-    };
-    "/home/modules/sellingpoint": {
-      id: "/home/modules/sellingpoint";
-      path: "/home/modules/sellingpoint";
-      fullPath: "/home/modules/sellingpoint";
-      preLoaderRoute: typeof HomeModulesSellingpointImport;
-      parentRoute: typeof rootRoute;
-    };
-    "/home/modules/usageflow": {
-      id: "/home/modules/usageflow";
-      path: "/home/modules/usageflow";
-      fullPath: "/home/modules/usageflow";
-      preLoaderRoute: typeof HomeModulesUsageflowImport;
-      parentRoute: typeof rootRoute;
-    };
-    "/home/modules/": {
-      id: "/home/modules/";
-      path: "/home/modules";
-      fullPath: "/home/modules";
-      preLoaderRoute: typeof HomeModulesIndexImport;
-      parentRoute: typeof rootRoute;
-    };
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof RouteImport
+      parentRoute: typeof rootRoute
+    }
+    '/template': {
+      id: '/template'
+      path: '/template'
+      fullPath: '/template'
+      preLoaderRoute: typeof TemplateImport
+      parentRoute: typeof rootRoute
+    }
+    '/home/default': {
+      id: '/home/default'
+      path: '/home/default'
+      fullPath: '/home/default'
+      preLoaderRoute: typeof HomeDefaultImport
+      parentRoute: typeof rootRoute
+    }
+    '/home/': {
+      id: '/home/'
+      path: '/home'
+      fullPath: '/home'
+      preLoaderRoute: typeof HomeIndexImport
+      parentRoute: typeof rootRoute
+    }
+    '/home/modules/about': {
+      id: '/home/modules/about'
+      path: '/home/modules/about'
+      fullPath: '/home/modules/about'
+      preLoaderRoute: typeof HomeModulesAboutImport
+      parentRoute: typeof rootRoute
+    }
+    '/home/modules/hero': {
+      id: '/home/modules/hero'
+      path: '/home/modules/hero'
+      fullPath: '/home/modules/hero'
+      preLoaderRoute: typeof HomeModulesHeroImport
+      parentRoute: typeof rootRoute
+    }
+    '/home/modules/sellingpoint': {
+      id: '/home/modules/sellingpoint'
+      path: '/home/modules/sellingpoint'
+      fullPath: '/home/modules/sellingpoint'
+      preLoaderRoute: typeof HomeModulesSellingpointImport
+      parentRoute: typeof rootRoute
+    }
+    '/home/modules/usageflow': {
+      id: '/home/modules/usageflow'
+      path: '/home/modules/usageflow'
+      fullPath: '/home/modules/usageflow'
+      preLoaderRoute: typeof HomeModulesUsageflowImport
+      parentRoute: typeof rootRoute
+    }
+    '/home/modules/': {
+      id: '/home/modules/'
+      path: '/home/modules'
+      fullPath: '/home/modules'
+      preLoaderRoute: typeof HomeModulesIndexImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
@@ -150,7 +150,7 @@ export const routeTree = rootRoute.addChildren({
   HomeModulesSellingpointRoute,
   HomeModulesUsageflowRoute,
   HomeModulesIndexRoute,
-});
+})
 
 /* prettier-ignore-end */
 

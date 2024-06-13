@@ -28,7 +28,7 @@ export const Navbar: FC = (): ReactElement => {
       </section>
       {navMenu ? (
         <div className="h-32 py-2 w-full bg-custom-white mt-20 absolute">
-          <ul className="flex flex-col gap-y-3 items-center justify-center text-white text-xl">
+          <ul className="flex flex-col gap-y-3 items-center justify-center text-black text-xl">
             <Link to={"/"}>Home</Link>
             <Link to={"/"}>News</Link>
             <Link to={"/"}>Articles</Link>

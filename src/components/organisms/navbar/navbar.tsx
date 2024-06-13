@@ -6,7 +6,7 @@ export const Navbar: FC = (): ReactElement => {
   const [navMenu, setNavMenu] = useState(false);
 
   return (
-    <header className="flex md:px-6 relative bg-[#F1F3FF] w-full h-20">
+    <header className="flex md:px-6 relative bg-custom-white w-full h-20">
       <section className="flex w-full px-2 justify-between items-center">
         <figure className="flex items-center gap-x-2 font-bold text-black text-3xl">
           <figcaption>HIMATIF UNINUS</figcaption>

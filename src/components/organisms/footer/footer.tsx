@@ -5,7 +5,7 @@ export const Footer: FC = (): ReactElement => {
     <footer className="bg-custom-blue text-custom-white mt-16">
       <div className="container mx-auto flex justify-between items-center py-10 px-10">
         <div className="mb-20">
-          <h1 className="text-3xl font-bold py-5">TheraTalk AI</h1>
+          <h1 className="text-3xl font-bold py-5">HIMATIF UNINUS</h1>
           <p className="text-xl mt-2">Developed by UNINUS HIMATIF Team</p>
         </div>
         <div className="flex space-x-10">

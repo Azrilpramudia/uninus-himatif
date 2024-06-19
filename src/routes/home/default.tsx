@@ -1,4 +1,4 @@
-import { Navbar } from "@/components";
+import { Footer, Navbar } from "@/components";
 import { Hero } from "./modules";
 import { FC, Fragment, ReactElement } from "react";
 import { createRoute } from "@tanstack/react-router";
@@ -16,6 +16,7 @@ const LandingPage: FC = (): ReactElement => {
       <About />
       <SellingPoint />
       <UsageFlow />
+      <Footer />
     </Fragment>
   );
 };
